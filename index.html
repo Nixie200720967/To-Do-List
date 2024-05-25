@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive To-Do List Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <h2>Abdul Aziz</h2>
+                <p>Front End Developer</p>
+            </div>
+            <div class="time">
+                <p id="current-time"></p>
+            </div>
+        </header>
+        <main>
+            <section class="task-input">
+                <div class="text-task">
+                    <br><label>Input your task here</label>
+                    <textarea id="task-text" placeholder="Write your task here..."></textarea>
+                </div>
+
+                <div class="prority-task">
+                    <br>
+                    <div class="label-task-rpiority">
+                        <label>Task Priority</label>
+                    </div>
+                    
+                    <select id="priority">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+                
+
+    
+
+
+                <button id="add-task">Add Task</button>
+            </section>
+            <section class="task-lists">
+                <div class="to-do">
+                    <h3>To Do</h3>
+                    <ul id="to-do-list"></ul>
+                </div>
+                <div class="done">
+                    <h3>Done</h3>
+                    <ul id="done-list"></ul>
+                </div>
+            </section>
+            <hr>
+            <div class="delete-btn">
+                <br><br>
+                <button id="delete-all">Delete All Tasks</button>
+            </div>
+            
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
