@@ -22,8 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const li = document.createElement('li');
         li.innerHTML = `
             <span>${taskValue} - <em>${priority.value}</em></span>
-            <input type="checkbox" class="check-task">
+            <div>
+                <input type="checkbox" class="check-task">
+                <button class="delete-task">&times;</button>
+            </div>
         `;
+
 
         toDoList.appendChild(li);
         taskText.value = '';
@@ -37,7 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 toDoList.appendChild(li);
             }
         });
+
+        li.querySelector('.delete-task').addEventListener('click', () => {
+            li.remove();
+        });
     };
+
 
     const deleteAllTasks = () => {
         toDoList.innerHTML = '';
