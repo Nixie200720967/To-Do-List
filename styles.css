@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url(img/bg.jpg);
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+
+.profile h2 {
+    margin: 0;
+}
+
+.time p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#task-text {
+    width: 40%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+#priority{
+    width: 20%;
+    padding: 10px;
+    font-size: 1em;    
+
+}
+
+#task-date {
+    width: 20%;
+    padding: 10px;
+    font-size: 1em;    
+    border-radius: 10px;
+}
+
+#add-task {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.task-lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.to-do, .done {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.center {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#delete-all {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8em;
+        border-radius: 10px;
+}
